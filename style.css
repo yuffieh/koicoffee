@@ -428,6 +428,12 @@ footer{
 	}
 }
 
+@media only screen and (min-width: 508px){
+	.wpmi-list{
+		flex-direction: column;
+	}
+}
+
 .null-instagram-feed-2 {
 	list-style: none;
 }
