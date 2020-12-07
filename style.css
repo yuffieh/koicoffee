@@ -411,6 +411,23 @@ footer{
 	width: auto !important;
 }
 
+@media only screen and (min-width: 768px){
+	.wpmi-list{
+			&.wpmi-layout-5 .wpmi-item{
+					width: auto !important;
+			}
+			&.wpmi-layout-6 .wpmi-item{
+					width: auto !important;
+			}
+			&.wpmi-layout-8 .wpmi-item{
+					width: auto!important;
+			}
+			&.wpmi-layout-10 .wpmi-item{
+					width: auto !important;
+			}
+	}
+}
+
 .null-instagram-feed-2 {
 	list-style: none;
 }
@@ -420,7 +437,7 @@ ul.wpmi-list li > a > img:hover {
 	transition:.5s;
 }
 
-.instagram-pics {
+/* .instagram-pics {
 	display: flex;
 	list-style: none;
 }
@@ -441,7 +458,7 @@ ul.wpmi-list li > a > img:hover {
 	height: 160px;
 	vertical-align: top;
 	width: 160px;
-}
+} */
 
 
 /* Search */
