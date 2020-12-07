@@ -391,7 +391,6 @@ footer{
 
 #header-widget-area{
 	list-style: none;
-	float:right;
 	display:flex;
 	align-items: center;
 	justify-content: center;
@@ -411,7 +410,7 @@ footer{
 	list-style: none;
 }
 
-ul.instagram-pics li > a > img:hover {
+ul.wpmi-list li > a > img:hover {
 	opacity: 0.5;
 	transition:.5s;
 }
@@ -421,19 +420,19 @@ ul.instagram-pics li > a > img:hover {
 	list-style: none;
 }
 
-.instagram ul {
+.wpmi-list ul {
 	display: flex;
 	margin-left: auto;
 	margin-right: auto;
 }
 
-.instagram ul li {
+.wpmi-list ul li {
 	float: left;
 	margin-left: 15px;
 	margin-right: 15px; 
 }
 
-.instagram img {
+.wpmi-list img {
 	height: 160px;
 	vertical-align: top;
 	width: 160px;
