@@ -1,26 +1,21 @@
 <?php
-/*
-Template Name: Homepage
-*/
-
+    /*
+    Template Name: Homepage
+    */
 get_header(); ?>
 
 <div id="primary" class="content-area">
     <div id="main" class="site-main" role="main">
 
         <?php while (have_posts()) :
-        the_post();
-
-        ?>
+            the_post();?>
 
 
         <!-- slider section -->
         <div class="slide-section">
             <div class="main-slide">
 
-
                 <?php
-
 
                 $categories = get_categories($args_cat);
                 $count = 0;
