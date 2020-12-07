@@ -411,29 +411,6 @@ footer{
 	width: auto !important;
 }
 
-@media only screen and (min-width: 768px){
-	.wpmi-list{
-			&.wpmi-layout-5 .wpmi-item{
-					width: auto !important;
-			}
-			&.wpmi-layout-6 .wpmi-item{
-					width: auto !important;
-			}
-			&.wpmi-layout-8 .wpmi-item{
-					width: auto!important;
-			}
-			&.wpmi-layout-10 .wpmi-item{
-					width: auto !important;
-			}
-	}
-}
-
-@media only screen and (min-width: 508px){
-	.wpmi-list{
-		flex-direction: column;
-	}
-}
-
 .null-instagram-feed-2 {
 	list-style: none;
 }
@@ -1123,12 +1100,27 @@ blockquote {
 		margin: 10px;
 		padding: 5px;
 	}
-	
-/*
-	.pre-content {
-		font-size: 25px;
-	}
-*/
 
+	li #wp_my_instagram-2{
+		display: none !important;
+	}
 
 }
+
+@media only screen and (min-width: 768px){
+	.wpmi-list{
+			&.wpmi-layout-5 .wpmi-item{
+					width: auto !important;
+			}
+			&.wpmi-layout-6 .wpmi-item{
+					width: auto !important;
+			}
+			&.wpmi-layout-8 .wpmi-item{
+					width: auto!important;
+			}
+			&.wpmi-layout-10 .wpmi-item{
+					width: auto !important;
+			}
+	}
+}
+
