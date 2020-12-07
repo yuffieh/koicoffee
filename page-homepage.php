@@ -8,7 +8,7 @@ get_header(); ?>
     <div id="main" class="site-main" role="main">
 
         <?php while (have_posts()) :
-            the_post();?>
+        the_post();?>
 
 
         <!-- slider section -->
@@ -16,7 +16,6 @@ get_header(); ?>
             <div class="main-slide">
 
                 <?php
-
                 $categories = get_categories($args_cat);
                 $count = 0;
                 foreach ($categories as $category):
