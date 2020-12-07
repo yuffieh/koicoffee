@@ -360,13 +360,11 @@ footer{
 	background-color:white;
 	height:50px;
 	width:120px;
-	display:flex;
+	display: inherit;
 	margin-left:79px;
 	border: solid 1px rgba(192, 192, 192, 0.83);
 	align-items: center;
-	justify-content: center;
-	position: absolute;
-	
+	justify-content: center;	
 }
 
 #insta-yuff-white{
@@ -374,7 +372,6 @@ footer{
 	background-color:white;
 	height:60px;
 	width:130px;
-	margin-left:79px;
 	position: absolute;
 	
 }
@@ -406,6 +403,10 @@ footer{
 	list-style: none;
 }
 
+.wpmi-item {
+	width: 0px;
+}
+
 .null-instagram-feed-2 {
 	list-style: none;
 }
@@ -432,7 +433,7 @@ ul.wpmi-list li > a > img:hover {
 	margin-right: 15px; 
 }
 
-.wpmi-list img {
+.wpmi-item img a {
 	height: 160px;
 	vertical-align: top;
 	width: 160px;
