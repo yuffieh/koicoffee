@@ -6,7 +6,7 @@ Author URI: https://yuffieh.com/
 Description: My first wordpress theme for my blog
 Version: 1.4
 License: GNU General Public License v1 or later
-License URI: 
+License URI:
 Tags: one-column, two-columns, right-sidebar, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, flexible-header, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready, blog
 Text Domain: koicoffee
 
@@ -340,7 +340,7 @@ ul.social-links li a {
 /* footer
 ---------------------------------------------------------------------------------------------------- */
 footer{
-	
+
 }
 
 
@@ -363,7 +363,7 @@ footer{
 	display: inherit;
 	border: solid 1px rgba(192, 192, 192, 0.83);
 	align-items: center;
-	justify-content: center;	
+	justify-content: center;
 }
 
 #insta-yuff-white{
@@ -372,7 +372,7 @@ footer{
 	height:60px;
 	width:130px;
 	position: absolute;
-	
+
 }
 
 .instagram .wrap {
@@ -434,7 +434,7 @@ ul.wpmi-list li > a > img:hover {
 .wpmi-list ul li {
 	float: left;
 	margin-left: 15px;
-	margin-right: 15px; 
+	margin-right: 15px;
 }
 
 .wpmi-item img a {
@@ -679,7 +679,7 @@ input[type=search]{
 	background-color: white;
 	margin-top: 20px;
 	font-family: 'Playfair Display', serif;
-	
+
 }
 
 #comments ol {
@@ -782,7 +782,7 @@ input[type=search]{
 }
 
 blockquote {
-	margin:20px;	
+	margin:20px;
 }
 
 .blog-content blockquote span{
@@ -1025,28 +1025,32 @@ blockquote {
 	}
 }
 
-@media only screen and (max-width: 991px) { 
+@media only screen and (max-width: 991px) {
 	.blog-col-img{
 		width: 100%;
 		margin-bottom: 10px;
 	}
-	
+
 	.blog-col-content div {
 		line-height: 1.8em;
 	}
-	
+
 	.share {
 	    width: 90%;
 	}
 	.col-md-5 {
 	    width: 100%;
     }
-	
+
 }
 
 /*900px*/
 
 @media only screen and (max-width: 900px) {
+	.blog-content {
+		padding:0px;
+	}
+
 	.blog-col-img{
 		width: 100%;
 	}
@@ -1072,6 +1076,9 @@ blockquote {
 
 /*600*/
 @media only screen and (max-width: 600px) {
+	.blog-content {
+		padding:0px;
+	}
 
 	/*subscribe section*/
 	.sub-btn-sm {
@@ -1095,7 +1102,7 @@ blockquote {
 	.slick-prev, .slick-next{
 		visibility: hidden;
 	}
-	
+
 	.section {
 		margin: 10px;
 		padding: 5px;
@@ -1108,6 +1115,10 @@ blockquote {
 }
 
 @media only screen and (min-width: 768px){
+	.blog-content {
+		padding:0px;
+	}
+
 	.wpmi-list{
 			&.wpmi-layout-5 .wpmi-item{
 					width: auto !important;
@@ -1123,4 +1134,3 @@ blockquote {
 			}
 	}
 }
-

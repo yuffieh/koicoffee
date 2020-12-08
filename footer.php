@@ -9,7 +9,7 @@
  * @since Twenty Sixteen 1.0
  */
 ?>
-<div class='flexy-center'>
+<div class='flexy-center' style="width:100%;">
 <div class="col-md-10 share">
   <div class="social-share">
     <p style="text-transform: uppercase; letter-spacing: 1px;">Instagram</p>
@@ -35,7 +35,7 @@
 
 
 
-	 
+
 	 <script type="text/javascript" src="https://code.jquery.com/jquery.js"></script>
 	 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/bootstrap.min.js"></script>
 
@@ -106,14 +106,14 @@
 
 <?php if ( is_front_page() ) : ?>
 	 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/slick.min.js"></script>
-<?php endif; ?>	
+<?php endif; ?>
 
 
 
 </div>
 
 <?php
- 
+
 if ( is_active_sidebar( 'instagram' ) ) : ?>
     <div id="header-widget-area" class="chw-widget-area widget-area" role="complementary">
 	    <div id="insta-yuff-white">	    </div>
@@ -123,17 +123,17 @@ if ( is_active_sidebar( 'instagram' ) ) : ?>
 
     <?php dynamic_sidebar( 'instagram' ); ?>
     </div>
-     
+
 <?php endif; ?>
 
 <!--
 <footer>
-	
+
 	testing
-	
+
 </footer>
 -->
-	
+
 
 
 <?php wp_footer(); ?>
