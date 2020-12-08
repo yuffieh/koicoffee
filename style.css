@@ -850,10 +850,11 @@ blockquote {
 }
 
 .section {
-  position: relative;
+	position: relative;
   margin: 0 60px 20px 60px;
   padding: 0px 10px 0px 20px;
-  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
 }
 
 .blog-pre {
