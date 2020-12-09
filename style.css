@@ -294,6 +294,17 @@ a:hover {
   padding:0px 10px 0 10px;
 }
 
+.header-nav ul.main-links li {
+  display: inline-block;
+  float:left;
+  font-size:11px;
+  margin: 10px 0 0 0;
+  height:15px;
+  vertical-align: middle;
+  border-right: 1px solid lightgrey;
+  padding:0px 10px 0 10px;
+}
+
 
 
 .header-nav ul li a {
