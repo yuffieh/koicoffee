@@ -42,6 +42,15 @@
 
   <script>
   $(document).on('ready', function() {
+
+    $('#overlay-button').click(function () {
+      if($(document.body).css("overflow") === 'visible') {
+        $(document.body).css("overflow", "hidden");
+      } else {
+        $(document.body).css("overflow", "visible");
+      }
+    });
+
     $(".main-slide").slick({
       dots: false,
       infinite: true,

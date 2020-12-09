@@ -20,7 +20,7 @@
 	<link href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.min.css" rel="stylesheet">
 	<link href='https://netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.css' rel='stylesheet'>
 	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/slick.css">
-	
+
 	<!-- 	fonts  -->
 	<link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400|PT+Serif:400,400i,700,700i|Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
 
@@ -46,35 +46,54 @@
 
 <!-- nav start -->
   <div class="nav-container">
-  	<div class="container-fluid">
+		<!-- mobile-nav-->
+			<span id="mobile-nav">
+				<input type="checkbox" id="overlay-input" />
+				<label for="overlay-input" id="overlay-button">
+					<span></span>
+				</label>
+				<div id="overlay">
+					<a href="/" class="header-brand">
+						<img src="<?php echo get_template_directory_uri(); ?>/imgs/white-logo.svg" class="brand-icon" />
+					</a>
+					<ul class="mobile">
+						<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+					</ul>
+					<?php wp_nav_menu( array( 'theme_location' => 'social' ) ); ?>
+				</div>
+			</span>
+		<!--mobile-nav end-->
 
+  	<div class="container-fluid">
   		<a href="/" class="header-brand">
   			<img src="<?php echo get_template_directory_uri(); ?>/imgs/white-logo.svg" class="brand-icon" />
       </a>
+
+
+
   		<div class="header-nav">
-              <ul class="main-links">
-	              <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-	              <li style="border:none;"><a href="/about/">about me</a></li>
+	      <ul class="main-links">
+	        <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+	        <li style="border:none;"><a href="/about/">about me</a></li>
+	      </ul>
 
 
-              </ul>
-              <ul class="social-links right">
-	          	<li style="margin: 10px 0px 0 -200px;">
-	          		<form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
-					    <label>
-					        <input type="search" class="search-field"
-					            placeholder="<?php echo esc_attr_x( 'Search', 'placeholder' ) ?>"
-					            value="<?php echo get_search_query() ?>" name="s" id="s"
-					        />
-					    </label>
-						<input type="submit" class="submit-btn" value="<?php echo esc_attr_x( '&#xf002;', 'submit button' ) ?>" />
-					</form>
-	        	</li>
-	        	<?php wp_nav_menu( array( 'theme_location' => 'social' ) ); ?>
-              </ul>
+	      <ul class="social-links right">
+	    		<li style="margin: 10px 0px 0 -200px;">
+	    			<form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
+				    	<label>
+				        <input type="search" class="search-field"
+				            placeholder="<?php echo esc_attr_x( 'Search', 'placeholder' ) ?>"
+				            value="<?php echo get_search_query() ?>" name="s" id="s"
+				        />
+				    	</label>
+							<input type="submit" class="submit-btn" value="<?php echo esc_attr_x( '&#xf002;', 'submit button' ) ?>" />
+						</form>
+	  			</li>
+	  			<?php wp_nav_menu( array( 'theme_location' => 'social' ) ); ?>
+	      </ul>
       </div>
       <!--/.header-nav-->
-  		<a href="#" class="header-mobile-navicon js-mobile-navicon"><span class="bars"></span></a>
   	</div>
   	<!--/.container-fluid-->
   </div>

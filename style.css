@@ -263,10 +263,10 @@ a:hover {
   z-index: 10000;
   box-shadow: 0px 0px 3px rgba(0,0,0,.3);
 }
+
 .brand-icon {
   width: 39px;
   float:left;
-  margin-left:20px;
 }
 
 .header-nav ul li {
@@ -836,7 +836,6 @@ blockquote {
 }
 
 
-
 /* outlines */
 .container {
 	margin:20px;
@@ -948,6 +947,10 @@ blockquote {
 
 /* mobile styles*/
 
+/*mobile-nav*/
+#mobile-nav {
+	display:none;
+}
 
 /* 1724px*/
 /*slider*/
@@ -1048,6 +1051,144 @@ blockquote {
 /*900px*/
 
 @media only screen and (max-width: 900px) {
+	#mobile-nav {
+		display:block;
+	}
+	 #overlay-button {
+		 position: absolute;
+		 right: 0.5em;
+		 top: .5em;
+		 padding: 26px 11px;
+		 z-index: 5;
+		 cursor: pointer;
+		 user-select: none;
+	}
+	 #overlay-button span {
+		 height: 4px;
+		 width: 35px;
+		 border-radius: 2px;
+		 background-color: #BAD29F;
+		 position: relative;
+		 display: block;
+		 transition: all 0.2s ease-in-out;
+	}
+	 #overlay-button span:before {
+		 top: -10px;
+		 visibility: visible;
+	}
+	 #overlay-button span:after {
+		 top: 10px;
+	}
+	 #overlay-button span:before, #overlay-button span:after {
+		 height: 4px;
+		 width: 35px;
+		 border-radius: 2px;
+		 background-color: #BAD29F;
+		 position: absolute;
+		 content: "";
+		 transition: all 0.2s ease-in-out;
+	}
+	 #overlay-button:hover span, #overlay-button:hover span:before, #overlay-button:hover span:after {
+		 background: #BAD29F;
+	}
+	 input[type=checkbox] {
+		 display: none;
+	}
+	 input[type=checkbox]:checked ~ #overlay {
+		 visibility: visible;
+	}
+	 input[type=checkbox]:checked ~ #overlay-button:hover span, input[type=checkbox]:checked ~ #overlay-button span {
+		 background: transparent;
+	}
+	 input[type=checkbox]:checked ~ #overlay-button span:before {
+		 transform: rotate(45deg) translate(7px, 7px);
+		 opacity: 1;
+	}
+	 input[type=checkbox]:checked ~ #overlay-button span:after {
+		 transform: rotate(-45deg) translate(7px, -7px);
+	}
+	 #overlay {
+		 height: 100vh;
+		 width: 100vw;
+		 background: white;
+		 z-index: 2;
+		 left: 0;
+		 top: 0;
+		 visibility: hidden;
+		 position: fixed;
+		 overflow-y: hidden;
+	}
+	 #overlay.active {
+		 visibility: visible;
+	}
+	 #overlay ul {
+		 display: flex;
+		 flex-direction: column;
+		 text-align: center;
+		 height: 100vh;
+		 padding-left: 0;
+		 list-style-type: none;
+	}
+	 #overlay ul li {
+		 padding: 1em;
+		 opacity: 0;
+			animation: fadeIn 0.9s 1;
+			animation-fill-mode: forwards;
+	}
+
+	#overlay ul li:nth-child(5n+1) {
+	  animation-delay: 0.5s;
+	}
+
+	@keyframes fadeIn {
+	  0% {
+	    opacity: 0.0;
+	  }
+	  100% {
+	    opacity: 1.0;
+	  }
+	}
+
+	#overlay ul li a {
+		color: #BAD29F;
+		text-transform: uppercase;
+		text-decoration: none;
+		font-size: 1.5em;
+		-o-transition:color .2s ease-out, background 1s ease-in;
+		-ms-transition:color .2s ease-out, background 1s ease-in;
+		-moz-transition:color .2s ease-out, background 1s ease-in;
+		-webkit-transition:color .2s ease-out, background 1s ease-in;
+		transition:color .2s ease-out, background 1s ease-in;
+	}
+	 #overlay ul li a:hover {
+		 color: #F7CD59;
+	}
+
+	.header-nav {
+		display: none;
+	}
+
+	.nav-container {
+		position: relative;
+		background-color: #fff;
+		top:0;
+		height: 70px;
+		width: 100%;
+		z-index: 10000;
+		box-shadow: none;
+	}
+
+	.header-brand {
+		display: flex;
+		align-items: center;
+		justify-content: center;;
+	}
+
+	.brand-icon {
+    width: 120px;
+    margin-top: .5em;
+}
+
 	.blog-content {
 		padding:0px;
 	}
