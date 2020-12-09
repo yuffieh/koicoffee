@@ -57,7 +57,8 @@
 						<img src="<?php echo get_template_directory_uri(); ?>/imgs/white-logo.svg" class="brand-icon" />
 					</a>
 					<ul class="mobile">
-						<?php wp_nav_menu( array( 'theme_location' => 'mobile' ) ); ?>
+						<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+						<li><a href="/about">about me</a></li>
 					</ul>
 					<?php wp_nav_menu( array( 'theme_location' => 'social' ) ); ?>
 				</div>
