@@ -90,6 +90,15 @@ a:hover {
 		align-items: center;
 }
 
+.about-me h1 {
+	margin-bottom: 1em;
+}
+
+.about-me p {
+	letter-spacing: .5px;
+	line-height: 2em;
+}
+
 .slick-track {
 	margin-top: 30px;
 }
@@ -326,14 +335,41 @@ a:hover {
   margin-top:-15px;
   padding: 15px 14px 5px 14px;
   text-decoration: none;
+	list-style-type: none;
 }
 
 .header-nav ul.main-links li a:hover {
   text-decoration: none;
-  color: #f27943;
-  border-bottom: 1px dashed  #f27943;
+  color: #F7CD59;
+  border-bottom: 1px dashed  #F7CD59;
+	transition:.3s;
 }
 
+
+/**drop down sub nav**/
+
+.sub-menu {
+	display: none;
+	background-color:white;
+	width: min-content;
+	height: 100%;
+	transition: .5s;
+	z-index: 9000;
+}
+
+ul.sub-menu > li.menu-item {
+	width: 100%;
+}
+
+.menu-item-has-children{
+	width: min-content;
+}
+
+
+.menu-item-has-children:hover .sub-menu {
+	width: min-content;
+  display: inline-table;
+}
 
 
 ul.social-links {

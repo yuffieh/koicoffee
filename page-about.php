@@ -4,20 +4,16 @@
     */
 get_header(); ?>
 
+
 <div id="primary" class="content-area">
     <div id="main" class="site-main" role="main">
-      <div class="container">
-        <div class="col-md-12">
+      <div class="container" style="display:flex; justify-content: center; align-items: center">
+        <div class="col-md-8 about-me">
           <?php while (have_posts()) :
           the_post();?>
           <?php the_content(); ?>
         </div>
       </div>
-
-
-
-
-
 
         <!-- subscribe section -->
 
