@@ -9,8 +9,8 @@
 ?>
 
 <?php if ( is_active_sidebar( 'sidebar-1' )  ) : ?>
-	<div class="container">
-		<div class="row">
+	<div class="container-fluid">
+		<div class="row flexy-center">
 		<?php dynamic_sidebar( 'sidebar-1' ); ?>
 		</div>
 	</div>

@@ -119,12 +119,10 @@ get_header(); ?>
 
                         <div class="col-md-6 share">
                             <div class="social-share">
-                                <a href=""><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-                                <a href="http://twitter.com/yuffieh_"><i class="fa fa-twitter"
-                                                                         aria-hidden="true"></i></a>
-                                <a href=""><i class="fa fa-pinterest" aria-hidden="true"></i></a>
-                                <a href="http://facebook.com/yuffieh"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                <a href=""><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                                <!-- <a href=""><i class="fa fa-heart-o" aria-hidden="true"></i></a> -->
+                                <a href="http://twitter.com/share?text=<?php echo urlencode(get_permalink()) ?>"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                <a href="http://pinterest.com/pin/create/button/?url=<?php echo urlencode(get_permalink()) ?>"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                                <a href="http://www.facebook.com/sharer/sharer.php?u=<?php echo urlencode(get_permalink()) ?>"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                             </div>
                             <!-- ./social-share -->
                         </div>

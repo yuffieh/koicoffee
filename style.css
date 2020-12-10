@@ -346,6 +346,40 @@ a:hover {
 }
 
 
+/**recent post widget*/
+.rpwwt-widget .widget-title {
+	margin-bottom: .5em;
+}
+
+
+.rpwwt-widget ul {
+	display:flex;
+	flex-direction: row;
+	margin:0;
+}
+
+.rpwwt-widget ul li {
+	margin: 0;
+	padding: 0 1em;
+}
+
+.rpwwt-widget ul li a {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: min-content;
+}
+
+.rpwwt-widget ul li img {
+    display: inline;
+    float: left;
+    margin: 0 0 .5em 0 !important;
+}
+
+
+
+
 /**drop down sub nav**/
 
 .sub-menu {
