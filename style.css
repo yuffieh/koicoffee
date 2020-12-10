@@ -356,6 +356,8 @@ a:hover {
 	display:flex;
 	flex-direction: row;
 	margin:0;
+	justify-content: center;
+  flex-wrap: wrap;
 }
 
 .rpwwt-widget ul li {
